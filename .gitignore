@@ -3,7 +3,8 @@ bin-debug/
 bin-release/
 [Oo]bj/
 [Bb]in/
-
+/.history/
+/node_modules/
 # Other files and folders
 .settings/
 
