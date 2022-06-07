@@ -1,0 +1,26 @@
+.btn-group-box{
+    display: flex;
+    >div{
+        flex: 1;
+    }
+}
+.left-list{
+    width: 100%;
+    overflow-x: auto;
+    overflow-y: auto;
+    max-height:668px
+}
+@media (min-width) {
+    
+}
+@media (max-width: 1280px) {
+    .left-list{
+        width: 100%;
+        overflow-x: auto;
+        overflow-y: auto;
+        max-height:590px
+    }
+}
+.content-wrapper /deep/ .el-table td .cell{
+    white-space: nowrap;
+  }

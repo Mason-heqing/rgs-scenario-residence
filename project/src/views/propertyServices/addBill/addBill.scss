@@ -1,0 +1,65 @@
+.repairs-box{
+    h3{
+        border-left: 5px solid #3c8dbc;
+        padding-left: 5px;
+        line-height: 20px;
+        margin-bottom: 20px;
+        font-size: 20px;
+    }
+    .repairs-msg{
+        width: 70%;
+        padding-left: 30px;
+        h4{
+            color: #000;
+        }
+        >p{
+            margin-bottom: 0;
+            line-height: 24px;
+        }
+        .img-box{
+            img{
+                width: 120px;
+                height: 120px;
+            }
+        }
+        /deep/{
+            .el-textarea__inner{
+                height: 120px;
+            }
+        }
+    }
+}
+
+.bill-form /deep/{
+    .el-form-item__content{
+        text-align: left;
+    }
+    .el-range-editor.el-input__inner{
+        width: 60%;
+    }
+    .el-input,.el-select{
+        width: 100%;
+    }
+    .el-select>.el-input{
+        width: 100%;
+    }
+    .el-dialog__footer{
+        text-align: center;
+    }
+    .el-form-item__content{
+        display: flex;
+    }
+  }
+  .content .upload_box /deep/{
+    .el-upload{
+        width: 90px;
+        height: 40px;
+        border-color: #ddd;
+        border-radius: 4px;
+    }
+    .el-upload-dragger{
+        width: 88px;
+        height: 38px;
+        line-height: 38px;
+    }
+  } 

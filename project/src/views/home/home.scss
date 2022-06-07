@@ -1,0 +1,114 @@
+.nice{
+    // color: red;
+}
+// .bg-red{
+//     background: red;
+//     height: 300px;
+//     padding-right:20px ;
+// }
+// .bg-blue{
+//     background: blue;
+//     height: 300px;
+// }
+// .bg-black{
+//     background: black;
+//     height: 300px;
+.select2-container--default .select2-selection--single{
+    background-color: transparent !important;
+}
+ .select2-container--default .select2-selection--single .select2-selection__rendered{
+    color: white;
+}
+.select2-container--default .select2-selection--single .select2-selection__arrow b{
+    border-color:#fff transparent transparent transparent;
+}
+.select2-container--default .select2-selection--single, .select2-selection .select2-selection--single {
+    border: 0px !important;
+}
+.select2-results__option{
+    width: 500px !important;
+}
+dropdown-wrapper{
+    display: none;
+}
+.red{
+    width: 100px;
+}
+.wrapper_top {
+    width: 35%;
+    padding-right: 0;
+}
+.wrapper-boox {
+    display: flex;
+    
+}
+.home{
+    .lower-h3 h3{
+        font-size: 28px;
+    }
+    .select-date{
+        display: flex;
+        
+        justify-content: space-between;
+        >span{
+            flex: 1;
+        }
+        >div{
+            width: 20%;
+        }
+    }
+    .person-list{
+        
+        li{
+            display: flex;
+            padding: 8px 0;
+            .list-left{
+                width: 26%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                img{
+                    max-width: 80px;
+                    max-height: 80px;
+                    border-radius: 50%;
+                }
+            }
+            .list-right{
+                // flex: 1;
+                width: 74%;
+                >p{
+                    width: 100%;
+                    text-overflow: ellipsis;
+                    overflow: hidden;
+                    white-space: nowrap;
+                    line-height: 24px;
+                    margin-bottom: 0;
+                    font-size: 14px;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 1200px) {
+    .last-device{
+        padding-right: 0px;
+        padding-left: 15px !important;
+    }
+}
+.record-pop{
+    overflow: hidden;
+    .record-pop-left,.record-pop-right{
+        width: 33%;
+        float: left;
+    }
+    p{
+        span{
+            width: 80px;
+            display: inline-block;
+            text-align: right;
+            color: #222;
+            font-weight: 600;
+        }
+    }
+}

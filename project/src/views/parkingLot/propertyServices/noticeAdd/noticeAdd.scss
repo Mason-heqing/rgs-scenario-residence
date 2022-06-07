@@ -1,0 +1,26 @@
+.add-notice /deep/{
+    .editor-box{
+        .el-form-item__content{
+            margin-left: 0!important;
+        }
+    }
+    .el-form-item__content{
+        display: flex;
+        width: 100%;
+    }
+    .editor-text{
+        width: 80%;
+        height: 580px;
+        z-index: 2;
+    }
+    .w-e-text-container{
+        height: 520px!important;
+    }
+    .el-form-item__label{
+        width: 100px;
+        margin-right: 5px;
+    }
+    .el-form-item.is-required{
+        display: flex;
+    }
+}

@@ -1,0 +1,11 @@
+.btn-group-box{
+    display: flex;
+    >div{
+        flex: 1;
+    }
+}
+.channel-pay /deep/ {
+    .el-select{
+        width: 100%;
+    }
+}

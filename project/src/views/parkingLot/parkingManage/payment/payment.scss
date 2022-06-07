@@ -1,0 +1,44 @@
+.add-h4{
+    padding-left:10px;
+    margin-left:20px ;
+    border-left: 5px solid #007aff;
+}
+.avatar-uploader .el-upload {
+    border: 1px dashed #d9d9d9;
+    border-radius: 6px;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+  }
+  .avatar-uploader .el-upload:hover {
+    border-color: #409EFF;
+  }
+  .avatar-uploader-icon {
+    font-size: 28px;
+    color: #8c939d;
+    width: 100px;
+    height: 100px;
+    line-height:100px;
+    text-align: center;
+    border: 1px dashed #c0ccda;
+  }
+  .avatar {
+    width: 100px;
+    height: 100px;
+    display: block;
+  }
+  .upload_box /deep/ {
+    .el-upload {
+        width: 100px;
+        height: 100px;
+        border-radius: 2px;
+        // border: 1px dashed rgba(158, 157, 162, 1);
+        text-align: center;
+        line-height: 100px;
+    }
+    .el-upload-dragger {
+        width: 98px;
+        height: 98px;
+        border: 0;
+    }
+  }

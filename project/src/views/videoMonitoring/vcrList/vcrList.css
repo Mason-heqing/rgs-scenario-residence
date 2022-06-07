@@ -1,0 +1,21 @@
+.el-card {
+	width: 98.2%;
+	margin: 15px auto 0 auto;
+	border-top: 3px solid #3c8dbc;
+} 
+.btn_box .el-button {
+    margin: 5px 0 0 5px;
+    float: right;
+}
+.video_box {
+    position: relative;
+    /* width: 70%; */
+    margin: 0 auto;
+}
+.video-close {
+	position: absolute;
+	right: 5%;
+	top: 6%;
+	cursor: pointer;
+	color: #ffffff;
+}

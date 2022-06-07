@@ -1,0 +1,39 @@
+.el-card {
+  width: 98.2%;
+  margin: 15px auto 0 auto;
+  border-top: 3px solid #3c8dbc;
+}
+.row_box {
+  display: flex;
+  align-items: center;
+}
+.row_cz {
+  margin-top: 20px;
+}
+.table_box {
+  margin-top: 20px;
+}
+.car-box_msg {
+  display: flex;
+  align-items: center;
+  /* border: 1px solid red; */
+}
+.car-box_msg .el-input {
+  width: 22vw;
+
+}
+.car-box_msg span {
+  color: #696b6f;
+  font-weight: 600;
+}
+
+._top {
+  margin-top: 26px;
+}
+.block {
+  margin-top: 20px;
+  float: right;
+}
+.dlog_box {
+  margin-left: 10%;
+}

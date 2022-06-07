@@ -1,0 +1,112 @@
+.el-card {
+	width: 98.2%;
+	margin: 15px auto 0 auto;
+	border-top: 3px solid #3c8dbc;
+}
+.wrapper-content {
+	display: flex;
+}
+.content_video {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	margin-left: 25px;
+	width: 65%;
+}
+.video-box {
+	/* width: calc(calc(100% ) - 10px); */
+	position: relative;
+	width: 100%;
+
+}
+.video-box1 {
+	width: calc(calc(100% / 2) - 10px);
+	margin: 2px 2px;
+}
+.video-box2 {
+	width: calc(calc(100% / 3) - 10px);
+	margin: 2px 2px;
+}
+.warpper-topBox {
+	width: 225px;
+	margin: 0  auto 25px auto;
+}
+.content_left {
+	width: 20%;
+	display: flex;
+	flex-direction: column;
+
+
+}
+.content_left span {
+	font-size: 16px;
+	margin-top: 25px;
+}
+.content_left  >>>.el-input{
+	width: 100%;
+}
+
+.el_tabs {
+	margin-top: 25px;
+	width: 100%;
+}
+.active_A {
+	color: blue;
+}
+.video-close {
+	position: absolute;
+	right: 5%;
+	top: 6%;
+	cursor: pointer;
+	color: #ffffff;
+}
+.Camera_box {
+	position: relative;
+	margin: 0 20px;
+	width: 165px;
+	height: 170px;
+}
+.Camera_box .img_box img {
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%,-50%);
+	cursor: pointer;
+
+	
+}
+.Camera_box .img_box1  {
+	position: absolute;
+	left: 50%;
+	transform: translateX(-50%);
+	width: 32px;
+	height: 32px;
+	cursor: pointer;
+	
+}
+.Camera_box .img_box2 {
+	position: absolute;
+	left: 50%;
+	bottom: 0;
+	transform: translateX(-50%);
+	width: 32px;
+	height: 32px;
+	cursor: pointer;
+}
+.Camera_box .img_box3 {
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+	width: 32px;
+	height: 32px;
+	cursor: pointer;
+}
+.Camera_box .img_box4 {
+	position: absolute;
+	right: 0;
+	top: 50%;
+	transform: translateY(-50%);
+	width: 32px;
+	height: 32px;
+	cursor: pointer;
+}

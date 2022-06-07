@@ -1,0 +1,118 @@
+
+
+   
+    [class^="el-icon-"], [class*=" el-icon-"] {
+        margin: 0 5px;
+        color: #3c8dbc;
+    }
+    .btn-group-box{
+        display: flex;
+        justify-content: space-between;
+        >div{
+            flex: 1;
+        }
+    }
+    // .box-body /deep/{
+    //     tbody .el-table__row td{
+    //         &:nth-child(7),&:nth-child(8){
+    //             >div.cell{
+    //                 padding-left: 0;
+    //                 padding-right: 0;
+    //                 >div{
+    //                     border-bottom: 1px solid #ddd;
+    //                     &:nth-last-child(1){
+    //                         border-bottom: 0;
+    //                     }
+    //                 }
+    //             }
+    //         }
+    //     } 
+    // }
+    
+    .all-group{
+        height: 42px;
+        line-height: 42px;
+        padding-left: 20px;
+        border: 1px solid #ddd;
+        border-bottom: 0;
+    }
+    @media (max-width: 1200px) {
+        .btn-group-box{
+            margin-top: 15px;
+        }
+    }
+    .el-tab-pane{
+        padding-bottom: 10px;
+    }
+
+    .set-pop /deep/{
+        .el-dialog__body{
+            padding: 0 20px;
+        }
+        .icon-warning{
+            color:#E6A23C ;
+            font-size: 24px!important;
+        }
+        .tip{
+            color: red;
+            display: block;
+            margin: 5px 0;
+        }
+    }
+    .check-btn{
+        cursor: pointer;
+    }
+    // .tree-box /deep/{
+    //     .el-tree>.el-tree-node.is-expanded:first-child .el-tree-node__content{
+    //         background-color: #3c8dbc;
+    //     }
+    // }
+    .upload-zip /deep/{
+        .el-upload-list__item{
+            width: 60%;
+            a{
+                font-size: 16px;
+            }
+        }
+    }
+    .grant-box{
+        text-align: left;
+        cursor: pointer;
+        >div{
+            
+            height: 6px;
+            background: #00a65a;
+            border-radius: 3px;
+            &.grant-color-s{
+                width: 100%;
+                background: #00a65a;
+            }
+            &.grant-color-f{
+                width: 0;
+                background: #dd4b39;
+            }
+            &.grant-color-half{
+                width: 50%;
+                background: #e6a23c;
+            }
+        }
+        >span{
+            padding: 0px 6px;
+            height: 18px;
+            display: inline-block;
+            border-radius: 10px;
+            text-align: center;
+            color: #fff;
+            line-height: 18px;
+            font-size: 12px;
+            &.grant-num-s{
+                background: #00a65a;
+            }
+            &.grant-num-f{
+                background: #dd4b39;
+            }
+            &.grant-num-half{
+                background: #e6a23c;
+            }
+        }
+    }

@@ -1,0 +1,1605 @@
+/*
+ * -----
+ * 可复用的公共样式，待验证
+ * 目录结构如下：
+ * Reset    注：重置中的clear迁移到Float,重命名为clearfix
+ * Font     提供属性：字号：10/12/14/16/18/20/22/24/26/28/30/32/36/38/40/50/60 加粗：100-900/bold
+ * Padding  提供属性：上下左右/上下/左右/上/下/左/右 0/5/10/15/20/25/30/35/40/45/50/55/60/65/70/75/80/90/100
+ * Margin   提供属性：上下左右/上下/左右/上/下/左/右 0/5/10/15/20/25/30/35/40/45/50/55/60/65/70/75/80/90/100
+ * Float    提供属性：左右浮动/清除浮动（详见1346行）
+ * Text     提供属性：字母大小写/单行溢出省略/文本位置(详见1362行)
+ * Block    提供属性：inline/inline-block/block（详见1400）
+ * Width    支持宽度：50/100/150/200/250/300/350/400/450/500/20%/50%/100%
+ * Height   支持高度：50/100/150/200/250/300/350/400/450/500/100%
+ * ------
+ * 最后更新时间：2018/10/11(新增宽度20%、50%)
+ *
+ */
+
+
+/* ==================== Reset ==================== */
+
+@charset "utf-8";
+body,
+ul,
+ol,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+th,
+td,
+dl,
+dd,
+form,
+fieldset,
+legend,
+input,
+textarea,
+select {
+    margin: 0;
+    padding: 0;
+}
+
+.main_right {
+    /deep/ {
+        .el-range-editor.el-input__inner {
+            height: 32px;
+            padding: 0 10px;
+            border-radius: 2px;
+            width: 232px;
+            .el-range-input {
+                font-size: 12px;
+                color: #131320;
+            }
+            .el-range-separator {
+                color: #ABABAF;
+                font-size: 12px;
+                line-height: 30px;
+            }
+        }
+    }
+}
+.bitian{
+    color: #EE6854;
+    font-size: 20px;
+    position: relative;
+    top: 4px;
+    margin-right: 3px;
+}
+.btn-group-box{
+    display: flex;
+    justify-content: space-between;
+    >div{
+        flex: 1;
+    }
+}
+
+body {
+    line-height: 2;
+    font-size: 12px;
+    font-family: PingFang SC, -apple-system, Hiragino Sans GB, Microsoft YaHei, Helvetica Neue, Arial, sans-serif;
+    background: #F2F2F3;
+}
+
+a {
+    text-decoration: none;
+    color: #000;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+i,
+em {
+    font-style: normal;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+b,
+strong {
+    font-weight: normal;
+}
+
+ul,
+ol {
+    list-style: none;
+}
+
+input {
+    outline: none;
+}
+
+img {
+    border-style: none;
+}
+
+
+/* ==================== Font ==================== */
+
+
+/* -------------------- Size -------------------- */
+
+.font-size-10 {
+    font-size: 10px !important
+}
+
+.font-size-12 {
+    font-size: 12px !important
+}
+
+.font-size-14 {
+    font-size: 14px !important
+}
+
+.font-size-16 {
+    font-size: 16px !important
+}
+
+.font-size-18 {
+    font-size: 18px !important
+}
+
+.font-size-20 {
+    font-size: 20px !important
+}
+
+.font-size-24 {
+    font-size: 24px !important
+}
+
+.font-size-26 {
+    font-size: 26px !important
+}
+
+.font-size-28 {
+    font-size: 28px !important
+}
+
+.font-size-30 {
+    font-size: 30px !important
+}
+
+.font-size-32 {
+    font-size: 32px !important
+}
+
+.font-size-34 {
+    font-size: 34px !important
+}
+
+.font-size-36 {
+    font-size: 36px !important
+}
+
+.font-size-38 {
+    font-size: 38px !important
+}
+
+.font-size-40 {
+    font-size: 40px !important
+}
+
+.font-size-50 {
+    font-size: 50px !important
+}
+
+.font-size-60 {
+    font-size: 60px !important
+}
+
+
+/* -------------------- Weight -------------------- */
+
+.font-weight-100 {
+    font-weight: 100 !important
+}
+
+.font-weight-200 {
+    font-weight: 200 !important
+}
+
+.font-weight-300 {
+    font-weight: 300 !important
+}
+
+.font-weight-400 {
+    font-weight: 400 !important
+}
+
+.font-weight-500 {
+    font-weight: 500 !important
+}
+
+.font-weight-600 {
+    font-weight: 600 !important
+}
+
+.font-weight-700 {
+    font-weight: 700 !important
+}
+
+.font-weight-800 {
+    font-weight: 800 !important
+}
+
+.font-weight-900 {
+    font-weight: 900 !important
+}
+
+.font-weight-bold {
+    font-weight: bold !important
+}
+
+
+/* ==================== Padding ==================== */
+
+
+/* -------------------- 上下左右 -------------------- */
+
+.p-0 {
+    padding: 0 !important
+}
+
+.p-5 {
+    padding: 5px !important
+}
+
+.p-10 {
+    padding: 10px !important
+}
+
+.p-15 {
+    padding: 15px !important
+}
+
+.p-20 {
+    padding: 20px !important
+}
+
+.p-25 {
+    padding: 25px !important
+}
+
+.p-30 {
+    padding: 30px !important
+}
+
+.p-35 {
+    padding: 35px !important
+}
+
+.p-40 {
+    padding: 40px !important
+}
+
+.p-45 {
+    padding: 45px !important
+}
+
+.p-50 {
+    padding: 50px !important
+}
+
+.p-55 {
+    padding: 55px !important
+}
+
+.p-60 {
+    padding: 60px !important
+}
+
+.p-65 {
+    padding: 65px !important
+}
+
+.p-70 {
+    padding: 70px !important
+}
+
+.p-75 {
+    padding: 75px !important
+}
+
+.p-80 {
+    padding: 80px !important
+}
+
+.p-90 {
+    padding: 90px !important
+}
+
+.p-100 {
+    padding: 100px !important
+}
+
+
+/* -------------------- 上下（Y轴） -------------------- */
+
+.py-0 {
+    padding-top: 0 !important;
+    padding-bottom: 0 !important
+}
+
+.py-5 {
+    padding-top: 5px !important;
+    padding-bottom: 5px !important
+}
+
+.py-10 {
+    padding-top: 10px !important;
+    padding-bottom: 10px !important
+}
+
+.py-15 {
+    padding-top: 15px !important;
+    padding-bottom: 15px !important
+}
+
+.py-20 {
+    padding-top: 20px !important;
+    padding-bottom: 20px !important
+}
+
+.py-25 {
+    padding-top: 25px !important;
+    padding-bottom: 25px !important
+}
+
+.py-30 {
+    padding-top: 30px !important;
+    padding-bottom: 30px !important
+}
+
+.py-35 {
+    padding-top: 35px !important;
+    padding-bottom: 35px !important
+}
+
+.py-40 {
+    padding-top: 40px !important;
+    padding-bottom: 40px !important
+}
+
+.py-45 {
+    padding-top: 45px !important;
+    padding-bottom: 45px !important
+}
+
+.py-50 {
+    padding-top: 50px !important;
+    padding-bottom: 50px !important
+}
+
+.py-55 {
+    padding-top: 55px !important;
+    padding-bottom: 55px !important
+}
+
+.py-60 {
+    padding-top: 60px !important;
+    padding-bottom: 60px !important
+}
+
+.py-65 {
+    padding-top: 65px !important;
+    padding-bottom: 65px !important
+}
+
+.py-70 {
+    padding-top: 70px !important;
+    padding-bottom: 70px !important
+}
+
+.py-75 {
+    padding-top: 75px !important;
+    padding-bottom: 75px !important
+}
+
+.py-80 {
+    padding-top: 80px !important;
+    padding-bottom: 80px !important
+}
+
+.py-90 {
+    padding-top: 90px !important;
+    padding-bottom: 90px !important
+}
+
+.py-100 {
+    padding-top: 100px !important;
+    padding-bottom: 100px !important
+}
+
+
+/* -------------------- 左右（X轴） -------------------- */
+
+.px-0 {
+    padding-left: 0 !important;
+    padding-right: 0 !important
+}
+
+.px-5 {
+    padding-left: 5px !important;
+    padding-right: 5px !important
+}
+
+.px-10 {
+    padding-left: 10px !important;
+    padding-right: 10px !important
+}
+
+.px-15 {
+    padding-left: 15px !important;
+    padding-right: 15px !important
+}
+
+.px-20 {
+    padding-left: 20px !important;
+    padding-right: 20px !important
+}
+
+.px-25 {
+    padding-left: 25px !important;
+    padding-right: 25px !important
+}
+
+.px-30 {
+    padding-left: 30px !important;
+    padding-right: 30px !important
+}
+
+.px-35 {
+    padding-left: 35px !important;
+    padding-right: 35px !important
+}
+
+.px-40 {
+    padding-left: 40px !important;
+    padding-right: 40px !important
+}
+
+.px-45 {
+    padding-left: 45px !important;
+    padding-right: 45px !important
+}
+
+.px-50 {
+    padding-left: 50px !important;
+    padding-right: 50px !important
+}
+
+.px-55 {
+    padding-left: 55px !important;
+    padding-right: 55px !important
+}
+
+.px-60 {
+    padding-left: 60px !important;
+    padding-right: 60px !important
+}
+
+.px-65 {
+    padding-left: 65px !important;
+    padding-right: 65px !important
+}
+
+.px-70 {
+    padding-left: 70px !important;
+    padding-right: 70px !important
+}
+
+.px-75 {
+    padding-left: 75px !important;
+    padding-right: 75px !important
+}
+
+.px-80 {
+    padding-left: 80px !important;
+    padding-right: 80px !important
+}
+
+.px-90 {
+    padding-left: 90px !important;
+    padding-right: 90px !important
+}
+
+.px-100 {
+    padding-left: 100px !important;
+    padding-right: 100px !important
+}
+
+
+/* -------------------- 上 -------------------- */
+
+.pt-0 {
+    padding-top: 0 !important
+}
+
+.pt-5 {
+    padding-top: 5px !important
+}
+
+.pt-10 {
+    padding-top: 10px !important
+}
+
+.pt-15 {
+    padding-top: 15px !important
+}
+
+.pt-20 {
+    padding-top: 20px !important
+}
+
+.pt-25 {
+    padding-top: 25px !important
+}
+
+.pt-30 {
+    padding-top: 30px !important
+}
+
+.pt-35 {
+    padding-top: 35px !important
+}
+
+.pt-40 {
+    padding-top: 40px !important
+}
+
+.pt-45 {
+    padding-top: 45px !important
+}
+
+.pt-50 {
+    padding-top: 50px !important
+}
+
+.pt-55 {
+    padding-top: 55px !important
+}
+
+.pt-60 {
+    padding-top: 60px !important
+}
+
+.pt-65 {
+    padding-top: 65px !important
+}
+
+.pt-70 {
+    padding-top: 70px !important
+}
+
+.pt-75 {
+    padding-top: 75px !important
+}
+
+.pt-80 {
+    padding-top: 80px !important
+}
+
+.pt-90 {
+    padding-top: 90px !important
+}
+
+.pt-100 {
+    padding-top: 100px !important
+}
+
+
+/* -------------------- 右 -------------------- */
+
+.pr-0 {
+    padding-right: 0 !important
+}
+
+.pr-5 {
+    padding-right: 5px !important
+}
+
+.pr-10 {
+    padding-right: 10px !important
+}
+
+.pr-15 {
+    padding-right: 15px !important
+}
+
+.pr-20 {
+    padding-right: 20px !important
+}
+
+.pr-25 {
+    padding-right: 25px !important
+}
+
+.pr-30 {
+    padding-right: 30px !important
+}
+
+.pr-35 {
+    padding-right: 35px !important
+}
+
+.pr-40 {
+    padding-right: 40px !important
+}
+
+.pr-45 {
+    padding-right: 45px !important
+}
+
+.pr-50 {
+    padding-right: 50px !important
+}
+
+.pr-55 {
+    padding-right: 55px !important
+}
+
+.pr-60 {
+    padding-right: 60px !important
+}
+
+.pr-65 {
+    padding-right: 65px !important
+}
+
+.pr-70 {
+    padding-right: 70px !important
+}
+
+.pr-75 {
+    padding-right: 75px !important
+}
+
+.pr-80 {
+    padding-right: 80px !important
+}
+
+.pr-90 {
+    padding-right: 90px !important
+}
+
+.pr-100 {
+    padding-right: 100px !important
+}
+
+
+/* -------------------- 下 -------------------- */
+
+.pb-0 {
+    padding-bottom: 0 !important
+}
+
+.pb-5 {
+    padding-bottom: 5px !important
+}
+
+.pb-10 {
+    padding-bottom: 10px !important
+}
+
+.pb-15 {
+    padding-bottom: 15px !important
+}
+
+.pb-20 {
+    padding-bottom: 20px !important
+}
+
+.pb-25 {
+    padding-bottom: 25px !important
+}
+
+.pb-30 {
+    padding-bottom: 30px !important
+}
+
+.pb-35 {
+    padding-bottom: 35px !important
+}
+
+.pb-40 {
+    padding-bottom: 40px !important
+}
+
+.pb-45 {
+    padding-bottom: 45px !important
+}
+
+.pb-50 {
+    padding-bottom: 50px !important
+}
+
+.pb-55 {
+    padding-bottom: 55px !important
+}
+
+.pb-60 {
+    padding-bottom: 60px !important
+}
+
+.pb-65 {
+    padding-bottom: 65px !important
+}
+
+.pb-70 {
+    padding-bottom: 70px !important
+}
+
+.pb-75 {
+    padding-bottom: 75px !important
+}
+
+.pb-80 {
+    padding-bottom: 80px !important
+}
+
+.pb-90 {
+    padding-bottom: 90px !important
+}
+
+.pb-100 {
+    padding-bottom: 100px !important
+}
+
+
+/* -------------------- 左 -------------------- */
+
+.pl-0 {
+    padding-left: 0 !important
+}
+
+.pl-5 {
+    padding-left: 5px !important
+}
+
+.pl-10 {
+    padding-left: 10px !important
+}
+
+.pl-15 {
+    padding-left: 15px !important
+}
+
+.pl-20 {
+    padding-left: 20px !important
+}
+
+.pl-25 {
+    padding-left: 25px !important
+}
+
+.pl-30 {
+    padding-left: 30px !important
+}
+
+.pl-35 {
+    padding-left: 35px !important
+}
+
+.pl-40 {
+    padding-left: 40px !important
+}
+
+.pl-45 {
+    padding-left: 45px !important
+}
+
+.pl-50 {
+    padding-left: 50px !important
+}
+
+.pl-55 {
+    padding-left: 55px !important
+}
+
+.pl-60 {
+    padding-left: 60px !important
+}
+
+.pl-65 {
+    padding-left: 65px !important
+}
+
+.pl-70 {
+    padding-left: 70px !important
+}
+
+.pl-75 {
+    padding-left: 75px !important
+}
+
+.pl-80 {
+    padding-left: 80px !important
+}
+
+.pl-90 {
+    padding-left: 90px !important
+}
+
+.pl-100 {
+    padding-left: 100px !important
+}
+
+
+/* ==================== Margin ==================== */
+
+
+/* -------------------- 上下左右 -------------------- */
+
+.m-0 {
+    margin: 0 !important
+}
+
+.m-5 {
+    margin: 5px !important
+}
+
+.m-10 {
+    margin: 10px !important
+}
+
+.m-15 {
+    margin: 15px !important
+}
+
+.m-20 {
+    margin: 20px !important
+}
+
+.m-25 {
+    margin: 25px !important
+}
+
+.m-30 {
+    margin: 30px !important
+}
+
+.m-35 {
+    margin: 35px !important
+}
+
+.m-40 {
+    margin: 40px !important
+}
+
+.m-45 {
+    margin: 45px !important
+}
+
+.m-50 {
+    margin: 50px !important
+}
+
+.m-55 {
+    margin: 55px !important
+}
+
+.m-60 {
+    margin: 60px !important
+}
+
+.m-65 {
+    margin: 65px !important
+}
+
+.m-70 {
+    margin: 70px !important
+}
+
+.m-75 {
+    margin: 75px !important
+}
+
+.m-80 {
+    margin: 80px !important
+}
+
+.m-90 {
+    margin: 90px !important
+}
+
+.m-100 {
+    margin: 100px !important
+}
+
+
+/* -------------------- 上下(Y轴) -------------------- */
+
+.my-0 {
+    margin-top: 0 !important;
+    margin-bottom: 0 !important
+}
+
+.my-5 {
+    margin-top: 5px !important;
+    margin-bottom: 5px !important
+}
+
+.my-10 {
+    margin-top: 10px !important;
+    margin-bottom: 10px !important
+}
+
+.my-15 {
+    margin-top: 15px !important;
+    margin-bottom: 15px !important
+}
+
+.my-20 {
+    margin-top: 20px !important;
+    margin-bottom: 20px !important
+}
+
+.my-25 {
+    margin-top: 25px !important;
+    margin-bottom: 25px !important
+}
+
+.my-30 {
+    margin-top: 30px !important;
+    margin-bottom: 30px !important
+}
+
+.my-35 {
+    margin-top: 35px !important;
+    margin-bottom: 35px !important
+}
+
+.my-40 {
+    margin-top: 40px !important;
+    margin-bottom: 40px !important
+}
+
+.my-45 {
+    margin-top: 45px !important;
+    margin-bottom: 45px !important
+}
+
+.my-50 {
+    margin-top: 50px !important;
+    margin-bottom: 50px !important
+}
+
+.my-55 {
+    margin-top: 55px !important;
+    margin-bottom: 55px !important
+}
+
+.my-60 {
+    margin-top: 60px !important;
+    margin-bottom: 60px !important
+}
+
+.my-65 {
+    margin-top: 65px !important;
+    margin-bottom: 65px !important
+}
+
+.my-70 {
+    margin-top: 70px !important;
+    margin-bottom: 70px !important
+}
+
+.my-75 {
+    margin-top: 75px !important;
+    margin-bottom: 75px !important
+}
+
+.my-80 {
+    margin-top: 80px !important;
+    margin-bottom: 80px !important
+}
+
+.my-90 {
+    margin-top: 90px !important;
+    margin-bottom: 90px !important
+}
+
+.my-100 {
+    margin-top: 100px !important;
+    margin-bottom: 100px !important
+}
+
+
+/* -------------------- 左右（Z轴） -------------------- */
+
+.mx-0 {
+    margin-left: 0 !important;
+    margin-right: 0 !important
+}
+
+.mx-5 {
+    margin-left: 5px !important;
+    margin-right: 5px !important
+}
+
+.mx-10 {
+    margin-left: 10px !important;
+    margin-right: 10px !important
+}
+
+.mx-15 {
+    margin-left: 15px !important;
+    margin-right: 15px !important
+}
+
+.mx-20 {
+    margin-left: 20px !important;
+    margin-right: 20px !important
+}
+
+.mx-25 {
+    margin-left: 25px !important;
+    margin-right: 25px !important
+}
+
+.mx-30 {
+    margin-left: 30px !important;
+    margin-right: 30px !important
+}
+
+.mx-35 {
+    margin-left: 35px !important;
+    margin-right: 35px !important
+}
+
+.mx-40 {
+    margin-left: 40px !important;
+    margin-right: 40px !important
+}
+
+.mx-45 {
+    margin-left: 45px !important;
+    margin-right: 45px !important
+}
+
+.mx-50 {
+    margin-left: 50px !important;
+    margin-right: 50px !important
+}
+
+.mx-55 {
+    margin-left: 55px !important;
+    margin-right: 55px !important
+}
+
+.mx-60 {
+    margin-left: 60px !important;
+    margin-right: 60px !important
+}
+
+.mx-65 {
+    margin-left: 65px !important;
+    margin-right: 65px !important
+}
+
+.mx-70 {
+    margin-left: 70px !important;
+    margin-right: 70px !important
+}
+
+.mx-75 {
+    margin-left: 75px !important;
+    margin-right: 75px !important
+}
+
+.mx-80 {
+    margin-left: 80px !important;
+    margin-right: 80px !important
+}
+
+.mx-90 {
+    margin-left: 90px !important;
+    margin-right: 90px !important
+}
+
+.mx-100 {
+    margin-left: 100px !important;
+    margin-right: 100px !important
+}
+
+
+/* -------------------- 上 -------------------- */
+
+.mt-0 {
+    margin-top: 0 !important
+}
+
+.mt-5 {
+    margin-top: 5px !important
+}
+
+.mt-10 {
+    margin-top: 10px !important
+}
+
+.mt-15 {
+    margin-top: 15px !important
+}
+
+.mt-20 {
+    margin-top: 20px !important
+}
+
+.mt-25 {
+    margin-top: 25px !important
+}
+
+.mt-30 {
+    margin-top: 30px !important
+}
+
+.mt-35 {
+    margin-top: 35px !important
+}
+
+.mt-40 {
+    margin-top: 40px !important
+}
+
+.mt-45 {
+    margin-top: 45px !important
+}
+
+.mt-50 {
+    margin-top: 50px !important
+}
+
+.mt-55 {
+    margin-top: 55px !important
+}
+
+.mt-60 {
+    margin-top: 60px !important
+}
+
+.mt-65 {
+    margin-top: 65px !important
+}
+
+.mt-70 {
+    margin-top: 70px !important
+}
+
+.mt-75 {
+    margin-top: 75px !important
+}
+
+.mt-80 {
+    margin-top: 80px !important
+}
+
+.mt-90 {
+    margin-top: 90px !important
+}
+
+.mt-100 {
+    margin-top: 100px !important
+}
+
+
+/* -------------------- 右 -------------------- */
+
+.mr-0 {
+    margin-right: 0 !important
+}
+
+.mr-5 {
+    margin-right: 5px !important
+}
+
+.mr-10 {
+    margin-right: 10px !important
+}
+
+.mr-15 {
+    margin-right: 15px !important
+}
+
+.mr-20 {
+    margin-right: 20px !important
+}
+
+.mr-25 {
+    margin-right: 25px !important
+}
+
+.mr-30 {
+    margin-right: 30px !important
+}
+
+.mr-35 {
+    margin-right: 35px !important
+}
+
+.mr-40 {
+    margin-right: 40px !important
+}
+
+.mr-45 {
+    margin-right: 45px !important
+}
+
+.mr-50 {
+    margin-right: 50px !important
+}
+
+.mr-55 {
+    margin-right: 55px !important
+}
+
+.mr-60 {
+    margin-right: 60px !important
+}
+
+.mr-65 {
+    margin-right: 65px !important
+}
+
+.mr-70 {
+    margin-right: 70px !important
+}
+
+.mr-75 {
+    margin-right: 75px !important
+}
+
+.mr-80 {
+    margin-right: 80px !important
+}
+
+.mr-90 {
+    margin-right: 90px !important
+}
+
+.mr-100 {
+    margin-right: 100px !important
+}
+
+
+/* -------------------- 下 -------------------- */
+
+.mb-0 {
+    margin-bottom: 0 !important
+}
+
+.mb-5 {
+    margin-bottom: 5px !important
+}
+
+.mb-10 {
+    margin-bottom: 10px !important
+}
+
+.mb-15 {
+    margin-bottom: 15px !important
+}
+
+.mb-20 {
+    margin-bottom: 20px !important
+}
+
+.mb-25 {
+    margin-bottom: 25px !important
+}
+
+.mb-30 {
+    margin-bottom: 30px !important
+}
+
+.mb-35 {
+    margin-bottom: 35px !important
+}
+
+.mb-40 {
+    margin-bottom: 40px !important
+}
+
+.mb-45 {
+    margin-bottom: 45px !important
+}
+
+.mb-50 {
+    margin-bottom: 50px !important
+}
+
+.mb-55 {
+    margin-bottom: 55px !important
+}
+
+.mb-60 {
+    margin-bottom: 60px !important
+}
+
+.mb-65 {
+    margin-bottom: 65px !important
+}
+
+.mb-70 {
+    margin-bottom: 70px !important
+}
+
+.mb-75 {
+    margin-bottom: 75px !important
+}
+
+.mb-80 {
+    margin-bottom: 80px !important
+}
+
+.mb-90 {
+    margin-bottom: 90px !important
+}
+
+.mb-100 {
+    margin-bottom: 100px !important
+}
+
+
+/* -------------------- 左 -------------------- */
+
+.ml-0 {
+    margin-left: 0 !important
+}
+
+.ml-5 {
+    margin-left: 5px !important
+}
+
+.ml-10 {
+    margin-left: 10px !important
+}
+
+.ml-15 {
+    margin-left: 15px !important
+}
+
+.ml-20 {
+    margin-left: 20px !important
+}
+
+.ml-25 {
+    margin-left: 25px !important
+}
+
+.ml-30 {
+    margin-left: 30px !important
+}
+
+.ml-35 {
+    margin-left: 35px !important
+}
+
+.ml-40 {
+    margin-left: 40px !important
+}
+
+.ml-45 {
+    margin-left: 45px !important
+}
+
+.ml-50 {
+    margin-left: 50px !important
+}
+
+.ml-55 {
+    margin-left: 55px !important
+}
+
+.ml-60 {
+    margin-left: 60px !important
+}
+
+.ml-65 {
+    margin-left: 65px !important
+}
+
+.ml-70 {
+    margin-left: 70px !important
+}
+
+.ml-75 {
+    margin-left: 75px !important
+}
+
+.ml-80 {
+    margin-left: 80px !important
+}
+
+.ml-90 {
+    margin-left: 90px !important
+}
+
+.ml-100 {
+    margin-left: 100px !important
+}
+
+
+/* ==================== Float ==================== */
+
+.float-left {
+    float: left !important;
+}
+
+.float-right {
+    float: right !important
+}
+
+.clearfix::after {
+    display: block;
+    clear: both;
+    content: ""
+}
+
+
+/* ==================== Text ==================== */
+
+
+/* -------------------- 字母大小写 -------------------- */
+
+.text-lowercase {
+    text-transform: lowercase !important
+}
+
+.text-uppercase {
+    text-transform: uppercase !important
+}
+
+.text-capitalize {
+    text-transform: capitalize !important
+}
+
+
+/* -------------------- 单行溢出省略 -------------------- */
+
+.text-ellipsis {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap
+}
+
+
+/* -------------------- 文本位置 -------------------- */
+
+.text-left {
+    text-align: left !important
+}
+
+.text-right {
+    text-align: right !important
+}
+
+.text-center {
+    text-align: center !important
+}
+
+
+/* ==================== Block ==================== */
+
+.inline {
+    display: inline !important;
+}
+
+.inline-block {
+    display: inline-block !important;
+}
+
+.block {
+    display: block !important;
+}
+
+
+/* ==================== Width ==================== */
+
+.w-50 {
+    width: 50px !important
+}
+
+.w-100 {
+    width: 100px !important
+}
+
+.w-150 {
+    width: 150px !important
+}
+
+.w-200 {
+    width: 200px !important;
+}
+
+.w-250 {
+    width: 250px !important;
+}
+
+.w-300 {
+    width: 300px !important;
+}
+
+.w-350 {
+    width: 350px !important;
+}
+
+.w-400 {
+    width: 400px !important;
+}
+
+.w-450 {
+    width: 450px !important;
+}
+
+.w-500 {
+    width: 500px !important;
+}
+
+.w20 {
+    width: 20% !important
+}
+
+.w50 {
+    width: 50% !important
+}
+
+.w100 {
+    width: 100% !important
+}
+
+
+/* ==================== Height ==================== */
+
+.h-50 {
+    height: 50px !important
+}
+
+.h-100 {
+    height: 100px !important
+}
+
+.h-150 {
+    height: 100px !important
+}
+
+.h-200 {
+    height: 200px !important;
+}
+
+.h-250 {
+    height: 250px !important;
+}
+
+.h-300 {
+    height: 300px !important;
+}
+
+.h-350 {
+    height: 350px !important;
+}
+
+.h-400 {
+    height: 400px !important;
+}
+
+.h-450 {
+    height: 450px !important;
+}
+
+.h-500 {
+    height: 500px !important;
+}
+
+.h100 {
+    height: 100% !important;
+}

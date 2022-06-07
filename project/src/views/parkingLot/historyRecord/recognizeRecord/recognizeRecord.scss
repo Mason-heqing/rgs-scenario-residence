@@ -1,0 +1,33 @@
+
+.form-horizontal /deep/{
+    .el-range-editor.el-input__inner{
+        width: 100%;
+    }
+    .content .el-input__icon{
+        line-height: 26px;
+    }
+    .el-date-editor .el-range-separator{
+        line-height: 26px;
+    }
+}
+.record-pop{
+    overflow: hidden;
+    .record-pop-left,.record-pop-right{
+        width: 50%;
+        float: left;
+    }
+    p{
+        span{
+            width: 80px;
+            display: inline-block;
+            text-align: right;
+            color: #222;
+            font-weight: 600;
+        }
+    }
+    .record-pop-right{
+        >p{
+            display: flex;
+        }
+    }
+}

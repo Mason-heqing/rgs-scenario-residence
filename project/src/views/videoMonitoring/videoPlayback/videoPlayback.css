@@ -1,0 +1,41 @@
+.el-card {
+	width: 98.2%;
+	margin: 15px auto 0 auto;
+	border-top: 3px solid #3c8dbc;
+} 
+.search_box {
+    display: flex;
+    align-items: center;
+}
+.search_box .el-input {
+    width: 15%;
+}
+.search_box div {
+    margin-left: 5px;
+}
+.block {
+    margin-top: 20px;
+    float: right;
+}
+.video_box {
+    position: relative;
+    width: 70%;
+    margin: 0 auto;
+}
+
+.video_title {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+.video_title span {
+    font-weight: 600;
+}
+
+.video-close {
+	position: absolute;
+	right: 5%;
+	top: 6%;
+	cursor: pointer;
+	color: #ffffff;
+}

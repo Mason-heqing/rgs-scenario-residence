@@ -1,0 +1,8 @@
+.add-btn-you {
+  height: 30px;
+  width: 50%;
+  display: inline-block;
+  line-height: 30px;
+  border: 1px solid #ddd;
+  text-align: center;
+}

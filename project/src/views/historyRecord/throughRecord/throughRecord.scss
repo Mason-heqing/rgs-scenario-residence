@@ -1,0 +1,12 @@
+
+.form-horizontal /deep/{
+    .el-range-editor.el-input__inner{
+        width: 100%;
+    }
+    .content .el-input__icon{
+        line-height: 26px;
+    }
+    .el-date-editor .el-range-separator{
+        line-height: 26px;
+    }
+}

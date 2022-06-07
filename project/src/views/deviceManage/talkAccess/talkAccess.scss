@@ -1,0 +1,21 @@
+
+.set-pop /deep/{
+    .el-form-item__content{
+        text-align: center;
+    }
+    .el-range-editor.el-input__inner{
+        width: 50%;
+    }
+    .el-input,.el-select{
+        width: 100%;
+    }
+    .el-select>.el-input{
+        width: 100%;
+    }
+    // .el-radio-group{
+    //     width: 50%;
+    // }
+    .el-dialog__footer{
+        text-align: center;
+    }
+  }

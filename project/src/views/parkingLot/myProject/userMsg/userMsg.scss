@@ -1,0 +1,54 @@
+.add-h4{
+    padding-left:10px;
+    margin-left:20px ;
+    border-left: 5px solid #007aff;
+}
+.avatar-uploader .el-upload {
+    border: 1px dashed #d9d9d9;
+    border-radius: 6px;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+  }
+  .avatar-uploader .el-upload:hover {
+    border-color: #409EFF;
+  }
+  .avatar-uploader-icon {
+    font-size: 28px;
+    color: #8c939d;
+    width: 148px;
+    height: 148px;
+    line-height: 148px;
+    text-align: center;
+    border: 1px dashed #c0ccda;
+  }
+  .avatar {
+    width: 148px;
+    height: 148px;
+    display: block;
+  }
+  .btn-group-box{
+    display: flex;
+    justify-content: space-between;
+    >div{
+        flex: 1;
+    }
+}
+.all-group{
+    height: 42px;
+    line-height: 42px;
+    padding-left: 20px;
+    border: 1px solid #ddd;
+    border-bottom: 0;
+}
+@media (max-width: 1200px) {
+    .btn-group-box{
+        margin-top: 20px;
+    }
+}
+.set-pop /deep/{
+  .el-dialog__body{
+    padding-top: 10px;
+  }
+  
+}

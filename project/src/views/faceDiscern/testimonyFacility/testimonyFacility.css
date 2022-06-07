@@ -1,0 +1,52 @@
+.my_card-box {
+	display: flex;
+}
+.my_card-box .el-input {
+	width: 285px;
+
+}
+.box-table {
+	margin-top: 10px;
+} 
+.block {
+	margin-top: 20px;
+	float: left;
+}
+.el-card {
+	width: 98.2%;
+	margin: 15px auto 0 auto;
+	border-top: 3px solid #3c8dbc;
+}
+.btn_box {
+  margin-top: 20px;
+}
+.dialog_box {
+  display: flex;
+  align-items: center;
+  margin: 20px 0 0 35px;
+}
+.dialog_box span::before {
+  content: "*";
+  color: crimson;
+}
+.dialog_box .el-input {
+  width: 70%;
+}
+._top {
+  margin-top: 26px;
+}
+._siyou {
+  color: #696b6f;
+  font-weight: 600;
+}
+>>> .el-icon-plus {
+  font-weight: 600;
+}
+.el-card {
+  width: 98.2%;
+  margin: 15px auto 0 auto;
+  border-top: 3px solid #3c8dbc;
+}
+.dlog_box {
+  margin-left: 5%;
+}

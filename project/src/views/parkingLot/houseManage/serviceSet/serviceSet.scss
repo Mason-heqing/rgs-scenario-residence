@@ -1,0 +1,50 @@
+.service-box{
+    margin-bottom: 20px;
+    ul{
+        overflow: hidden;
+        margin-top: 20px;
+        li{
+            width: 25%;
+            height: 130px;
+            border-radius: 10px;
+            border: 1px solid #ccc;
+            float: left;
+            margin-right: 20px;
+            line-height: 130px;
+            text-align: center;
+        } 
+    } 
+    &.text-box{
+        padding-bottom: 30px;
+        h4{
+            span{
+                color: #3c8dbc;
+                cursor: pointer;
+                font-size: 14px;
+                margin-left: 5px;
+            }
+        }
+        ul{
+            overflow: hidden;
+            margin-top: 20px;
+            li /deep/{
+                line-height: 24px;
+                text-align: left;
+                .finish-box{
+                    height: 130px;
+                    border-radius: 10px;
+                    border: 1px solid #ccc;
+                    padding: 0 10px;
+                    word-wrap: break-word;
+                }
+                border: 0;
+                .el-textarea{
+                    height: 100%;       
+                }
+                .el-textarea__inner{
+                    height: 100%;              
+                }
+            }
+        }
+    }
+}

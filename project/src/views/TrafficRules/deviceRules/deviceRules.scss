@@ -1,0 +1,11 @@
+.set-pop /deep/{
+  .el-form-item__content{
+      text-align: center;
+  }
+  .el-range-editor.el-input__inner{
+      width: 240px;
+  }
+  .el-select>.el-input{
+      width: 240px;
+  }
+}

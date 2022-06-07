@@ -1,0 +1,27 @@
+.btn-group-box{
+    display: flex;
+    >div{
+        flex: 1;
+    }
+}
+.channel-pay /deep/ {
+    .el-select{
+        width: 100%;
+    }
+}
+.upload-zip /deep/{
+    .el-upload-list__item{
+        width: 60%;
+        a{
+            font-size: 16px;
+        }
+    }
+    .el-upload__input{
+        display: none;
+    }
+    
+}
+.tips{
+    padding: 15px 0;
+    color: orange;
+}

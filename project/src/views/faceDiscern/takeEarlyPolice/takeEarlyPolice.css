@@ -1,0 +1,22 @@
+.my_card-box {
+	display: flex;
+}
+.my_card-box .el-input {
+	width: 285px;
+
+}
+.btn_box {
+	margin-top: 20px;
+}
+.box-table {
+	margin-top: 10px;
+}
+.block {
+	margin-top: 20px;
+	float: right;
+}
+.el-card {
+	width: 98.2%;
+	margin: 15px auto 0 auto;
+	border-top: 3px solid #3c8dbc;
+}

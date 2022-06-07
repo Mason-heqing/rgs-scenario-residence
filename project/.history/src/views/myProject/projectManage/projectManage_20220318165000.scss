@@ -1,0 +1,14 @@
+.btn-group-box{
+    display: flex;
+    >div{
+        flex: 1;
+    }
+}
+@media (max-width: 1200px) {
+    .left-list{
+        width: 100%;
+        overflow-x: auto;
+        overflow-y: auto;
+        max-height:668px
+    }
+}

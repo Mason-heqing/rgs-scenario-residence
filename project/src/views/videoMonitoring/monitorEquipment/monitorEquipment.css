@@ -1,0 +1,30 @@
+.el-card {
+	width: 98.2%;
+	margin: 15px auto 0 auto;
+	border-top: 3px solid #3c8dbc;
+}
+.input-box {
+    display: flex;
+    align-items: center;
+}
+.input-box .el-input {
+    width: 70%;
+}
+.input-box span {
+    color: #696b6f;
+    font-weight: 600;
+}
+.input-box span::before {
+    content: '*';
+    color: crimson;
+}
+._top {
+    margin-top: 25px;
+}
+.block {
+    margin-top: 20px;
+    float: right;
+}
+.dlog_box {
+    margin-left: 10%;
+}
